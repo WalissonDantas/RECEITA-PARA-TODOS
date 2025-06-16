@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receitas Salgadas</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .grid-cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 2rem 0;
+    }
+
+    .card-receita {
+      background-color: #fef3c7;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 250px;
+      text-align: center;
+    }
+
+    .card-receita img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card-receita p {
+      margin-top: 0.5rem;
+      font-size: 16px;
+      font-family: 'Georgia', serif;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topo">
+    <div class="logo">
+      <img src="icone site.png" alt="logo" />
+      <div>
+        <h1>Receita <span>Para todos</span></h1>
+      </div>
+    </div>
+    <input type="text" placeholder="🔍 Buscar..." class="busca" />
+  </header>
+
+  <nav class="menu">
+    <a href="index.html"><button>Início</button></a>
+    <a href="salgadas.html"><button>Salgadas</button></a>
+    <a href="#"><button>Doces</button></a>
+    <a href="#"><button>Veganas</button></a>
+    <a href="#"><button>Lanches e Petiscos</button></a>
+  </nav>
+
+  <main class="conteudo">
+    <h2>RECEITAS SALGADAS</h2>
+    <div class="grid-cards">
+      <div class="card-receita">
+        <img src="lasanha_presunto_e_queijo.jpg" alt="Lasanha">
+        <p>Lasanha de Presunto e Queijo</p>
+      </div>
+      <div class="card-receita">
+        <img src="macarrao_bolonhesa.jpg" alt="macarraopag2">
+        <p>Macarrao a Bolonhesa</p>
+      </div>
+      <div class="card-receita">
+        <img src="risoto_camarao.jpg" alt="Risoto">
+        <p>Risoto de Camarão</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
