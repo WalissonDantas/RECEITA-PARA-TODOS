@@ -252,3 +252,31 @@ iframe {
   width: 60%;
   max-width: 600px;
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: white; /* Exemplo: pode ser qualquer estilo */
+  }
+
+  .logo {
+    width: 100px; /* Reduz o tamanho da logo */
+  }
+
+  .beneficios {
+    display: block;
+    width: 100%;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+}
