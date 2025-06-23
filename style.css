@@ -380,3 +380,87 @@ iframe {
         font-size: 1rem;
     }
 }
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 80px;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .busca {
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .menu button {
+        width: 45%;
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .conteudo {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .texto {
+        width: 100%;
+        text-align: justify;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .btn-contato {
+        width: 90%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
