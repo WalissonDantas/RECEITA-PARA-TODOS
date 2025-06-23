@@ -231,7 +231,6 @@ textarea {
   color: #333;
 }
 
-/* Aplicações conforme atividade de opacidade e sombra */
 
 .card img {
   opacity: 0.3;
@@ -255,11 +254,98 @@ iframe {
 
 @media screen and (max-width: 480px) {
   body {
-    background-color: white; /* Exemplo: pode ser qualquer estilo */
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-color: white;
+  }
+
+  .topo {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
   }
 
   .logo {
-    width: 100px; /* Reduz o tamanho da logo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    max-width: 80px;
+    height: auto;
+  }
+
+  .logo h1 {
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  .logo h1 span {
+    display: block;
+    font-size: 1.2rem;
+    color: #f97316;
+    font-weight: 600;
+  }
+
+  .busca {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .menu button {
+    width: 45%;
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .conteudo {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .conteudo h2 {
+    font-size: 28px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .texto {
+    width: 100%;
+    text-align: justify;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 
   .beneficios {
@@ -267,200 +353,13 @@ iframe {
     width: 100%;
   }
 
-  video {
-    width: 100%;
-    height: auto;
+  .btn-contato {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
   }
 
-  header h1 {
-    text-align: center;
+  footer {
+    padding: 20px;
   }
-
-  nav {
-    position: static;
-  }
-}
-
-/* Responsividade para telas menores */
-@media screen and (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    .logo, header img {
-        width: 100%;
-        height: auto;
-    }
-
-    nav, nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    main, .content, .container {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-/* Responsividade com base nas classes reais do HTML */
-@media screen and (max-width: 480px) {
-    body {
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    .logo img {
-        width: 100%;
-        height: auto;
-    }
-
-    .logo h1 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .busca {
-        width: 100%;
-        display: block;
-        margin: 10px auto;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin: 20px 0;
-    }
-
-    .conteudo {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .texto {
-        padding: 10px;
-        text-align: justify;
-    }
-
-    iframe {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
-
-    footer {
-        padding: 20px;
-    }
-
-    .btn-contato {
-        width: 100%;
-        padding: 10px;
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-
-    .logo {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .logo img {
-        max-width: 80px;
-        height: auto;
-    }
-
-    .logo h1 {
-        font-size: 1.2rem;
-    }
-
-    .busca {
-        width: 90%;
-        display: block;
-        margin: 10px auto;
-    }
-
-    .menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .menu button {
-        width: 45%;
-        font-size: 1rem;
-        padding: 8px;
-    }
-
-    .conteudo {
-        width: 100%;
-        padding: 0 10px;
-        box-sizing: border-box;
-    }
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .card img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .texto {
-        width: 100%;
-        text-align: justify;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    iframe {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
-
-    footer {
-        padding: 20px;
-    }
-
-    .btn-contato {
-        width: 90%;
-        padding: 10px;
-        font-size: 1rem;
-    }
 }
