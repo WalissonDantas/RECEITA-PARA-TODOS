@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.topo {
+  background-color: #4a5568;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.logo span {
+  display: block;
+  color: #f97316;
+  font-weight: 600;
+}
+
+.busca {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  background-color: #f97316;
+  padding: 1rem 0;
+}
+
+.menu button {
+  background-color: #4a5568;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background-color: #2d3748;
+}
+
+.conteudo {
+  padding: 2rem;
+}
+
+.conteudo h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  background-color: #fef3c7;
+  padding: 3rem;
+  border-radius: 10px;
+  gap: 1.5rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.texto h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.texto p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: 600px;
+}
+
+.card-receita {
+  background-color: #fef3c7;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 300px;
+  /* tamanho fixo da caixa */
+  text-align: center;
+}
+
+.card-receita img {
+  width: 100%;
+  height: 180px;
+  /* define altura fixa */
+  object-fit: cover;
+  /* recorta e centraliza a imagem sem distorcer */
+  border-radius: 10px;
+}
+
+/* Estilos para o formulário de contato */
+.contato {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff9f0;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.contato h2 {
+  text-align: center;
+  color: #d35400;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+fieldset {
+  border: 1px solid #ffa94d;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #fff3e0;
+}
+
+legend {
+  font-weight: bold;
+  color: #e67e22;
+  padding: 0 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.enviar {
+  width: 40%;
+  margin: 0 auto;
+  padding: 12px;
+  background-color: #e67e22;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.enviar:hover {
+  background-color: #cf711f;
+  transform: scale(1.05);
+}
+
+.btn-contato {
+  padding: 10px 25px;
+  font-size: 15px;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-contato:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+.video {
+  text-align: center;
+  padding: 30px;
+  background: radial-gradient(circle, #000000, #ffff00);
+}
+
+.video h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+/* Aplicações conforme atividade de opacidade e sombra */
+
+.card img {
+  opacity: 0.3;
+  transition: opacity 0.4s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  filter: grayscale(30%) brightness(90%);
+}
+
+.card img:hover {
+  opacity: 1;
+}
+
+.logo h1 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+iframe {
+  width: 60%;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: white; /* Exemplo: pode ser qualquer estilo */
+  }
+
+  .logo {
+    width: 100px; /* Reduz o tamanho da logo */
+  }
+
+  .beneficios {
+    display: block;
+    width: 100%;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .logo, header img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav, nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main, .content, .container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Responsividade com base nas classes reais do HTML */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .busca {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .conteudo {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .texto {
+        padding: 10px;
+        text-align: justify;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .btn-contato {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
