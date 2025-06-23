@@ -51,21 +51,24 @@ body {
 
 .menu {
   display: flex;
-  justify-content: center;
-  gap: 15rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
   background-color: #f97316;
-  padding: 1rem 0;
+  gap: 10px;
 }
 
 .menu button {
+  width: 100%;
+  max-width: 300px;
+  font-size: 1rem;
+  padding: 10px;
   background-color: #4a5568;
   color: white;
   border: none;
-  padding: 0.7rem 1.5rem;
   border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
 }
+
 
 .menu button:hover {
   background-color: #2d3748;
