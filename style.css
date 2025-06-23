@@ -312,7 +312,7 @@ iframe {
     }
 }
 
-/* Responsividade com base nas classes reais do HTML */
+
 @media screen and (max-width: 480px) {
     body {
         padding: 10px;
